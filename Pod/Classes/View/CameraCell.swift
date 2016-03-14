@@ -29,6 +29,7 @@ final class CameraCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        cameraBackground.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI_2));
         
         // Don't trigger camera access for the background
         guard AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) == .Authorized else {
