@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
@@ -15,11 +15,13 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40Y-IQ-I2M">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-jD-B52">
+                                <rect key="frame" x="30" y="30" width="40" height="40"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-jD-B52">
-                        <rect key="frame" x="30" y="30" width="40" height="40"/>
-                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -27,10 +29,6 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="40Y-IQ-I2M" secondAttribute="trailing" id="0CF-25-fnk"/>
                 <constraint firstItem="40Y-IQ-I2M" firstAttribute="leading" secondItem="dx2-jd-nta" secondAttribute="leading" id="Le4-AF-WLH"/>
-                <constraint firstAttribute="trailing" secondItem="qvQ-jD-B52" secondAttribute="trailing" constant="30" id="bMH-5D-RYe"/>
-                <constraint firstItem="qvQ-jD-B52" firstAttribute="top" secondItem="dx2-jd-nta" secondAttribute="top" constant="30" id="bwE-TQ-qO6"/>
-                <constraint firstAttribute="bottom" secondItem="qvQ-jD-B52" secondAttribute="bottom" constant="30" id="m9b-Ob-DYN"/>
-                <constraint firstItem="qvQ-jD-B52" firstAttribute="leading" secondItem="dx2-jd-nta" secondAttribute="leading" constant="30" id="vec-jV-qy2"/>
                 <constraint firstItem="40Y-IQ-I2M" firstAttribute="top" secondItem="dx2-jd-nta" secondAttribute="top" id="vt7-P8-Z2b"/>
                 <constraint firstAttribute="bottom" secondItem="40Y-IQ-I2M" secondAttribute="bottom" id="wug-sP-OLR"/>
             </constraints>
